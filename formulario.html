@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="formulario.css">
+    <title>Formulario basico</title>
+</head>
+<body>
+    <form>
+        <h2>Formulario de Contacto</h2>
+            <fieldset> <!--SIMPLE INPUTS-->
+                <legend>INFORMACIÓN BASICA</legend>
+                <div class="form_input">
+                    <label>Nombre Completo
+                        <input type="text" placeholder="John Wick">
+                    </label>    
+                </div>
+                <div class="form_input">
+                    <label>Email
+                        <input type="email" placeholder="ejemplo@gmail.com">
+                    </label> 
+                </div>
+                <div class="form_input">
+                    <label>Asunto
+                        <input type="text" placeholder="El asunto de tu mensaje">
+                    </label>    
+                </div>
+            </fieldset>    
+        <!--SELECT & OPTION-->
+        <div class="form_input">
+            <label>Tipo de usuario
+                <select name="type-of-user">
+                    <option value="user1">Seguidor/a</option>
+                    <option value="user2">Empresa</option>
+                    <option value="user3">Otros</option>    
+                </select>
+            </label>
+        </div>
+        <!--DATALIST & OPTION-->
+        <div class="form_input">
+            <label>Referente
+                <input list="referente" name="referente">
+                <datalist id="referente" name="type-of-user">
+                    <option value="Mintic">Un creador de contenido</option>
+                    <option value="Empresa">Una empresa del rubro IT</option>
+                    <option value="Un amigo">Me recomendo un amigo</option>    
+                </datalist>
+            </label>
+        </div>
+        <!--TEXTAREA-->
+        <div class="form_input">
+            <label>Mensaje
+                <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
+            </label>    
+        </div>
+        <div class="form_input">
+            <label>Acepto los terminos y condiciones
+                <input type="checkbox" class="checkbox">
+            </label>    
+        </div>
+        <div>
+            <button type="submit">Enviar</button>
+        </div>
+    </form>
+
+    <a href="hojadevida.html">Regresar a la hoja de vida</a>
+</body>
+</html>
