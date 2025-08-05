@@ -1,0 +1,142 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #fFFFFF;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    background-color: #003366;
+    padding: 3px;
+    border-radius: 12px;
+    font-size: small;
+}
+
+nav h3 {
+    color: #ffff;
+    padding-left: 15px;
+}
+
+header {
+    border-radius: 12px;
+}
+
+nav li {
+    display:inline;
+    padding: 10px;
+    margin: 20px;
+    background-color: #7f7d7d;
+    border-radius: 10px;
+}
+
+nav a {
+    color: #fFFFFF;
+}
+
+.nav_link:hover {
+    background-color: #59e;
+}
+
+h1 {
+    font-size: larger;
+    background-color: #59e;
+    padding: 12px;
+    border-radius: 12px;
+    color: #fFFFFF;
+}
+
+p {
+    text-align: justify;
+    padding: 5px;
+    margin: 30px;
+}
+
+h1 + img {
+    border-radius: 50px;
+    border: 1px solid black;
+}
+
+h4 {
+    background-color: #7f7d7d;
+    padding: 4px;
+    border-radius: 5px;
+    color: #fFFFFF;
+}
+
+h3 + li {
+    text-align: left;
+}
+
+img {
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: solid 1px #003366;
+}
+
+td, th{
+    border: 2px solid #333;
+    text-align: center;
+    padding: 6px;
+    padding-bottom: 9px;
+    border: none;
+    font-family: sans-serif;
+    border-bottom: 1px solid #009;
+}
+
+td {
+    color: #444a;
+}
+
+table {
+    width: 100%;
+    min-width: 600px; /* ancho mínimo si necesitas columnas amplias */
+    border-collapse: separate;
+    border: 2px solid #007bff;
+    border-radius: 12px;
+}
+
+a{
+    text-decoration: none;
+    color: #910707;
+}
+
+img {
+    padding: 6px;
+}
+
+h2 {
+    text-align: center;
+    padding: auto;
+    background-color: #4A4A4A;
+    color: #fFFFFF;
+}
+
+br {
+    background-color: #4A4A4A;
+}
+
+hr {
+    background-color: #003366;
+    padding: 1px;
+}
+
+.listar {
+    padding: 10px;
+    margin: 20px;
+    text-align: left;
+}
+
+aside{
+    margin: 20px;
+    padding: 20px;
+}
+
+footer {
+    background-color: #003366;
+    padding: 40px;
+    margin: 20px;
+    border-radius: 7px;
+    color: #fFFFFF;
+}
