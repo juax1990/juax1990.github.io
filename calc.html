@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <h1>Calculadora basica con suma, resta, multiplicación y división</h1>
+  <p>Abre la consola del navegador para comenzar</p>
+
+  <script>
+    function realizarOperacion(num1, num2, operacion) {
+      if (operacion === "suma") {
+        return num1 + num2;
+      } else if (operacion === "resta") {
+        return num1 - num2;
+      } else if (operacion === "multiplicacion") {
+        return num1 * num2;
+      } else if (operacion === "division") {
+        if (num2 === 0) {
+          return "Error: No se puede dividir por cero.";
+        }
+        return num1 / num2;
+      } else {
+        return "Error: Operación no válida.";
+      }
+    }
+
+    let operacion = "";
+
+    while (operacion !== "salir") {
+      operacion = prompt("Ingrese una operación (suma, resta, multiplicacion, division) o 'salir' para terminar:");
+
+      if (operacion === null) break; // Si el usuario cierra el prompt
+
+      if (operacion === "salir") {
+        alert("Gracias por usar la calculadora. ¡Hasta pronto!");
+        break;
+      }
+
+      // Validar operación antes de pedir números
+      if (
+        operacion !== "suma" &&
+        operacion !== "resta" &&
+        operacion !== "multiplicacion" &&
+        operacion !== "division"
+      ) {
+        alert("Error: Por favor ingrese una operación válida.");
+        continue; // vuelve a pedir la operación
+      }
+
+      // Pedir números si la operación es válida
+      let num1 = parseFloat(prompt("Ingrese el primer número:"));
+      let num2 = parseFloat(prompt("Ingrese el segundo número:"));
+
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("Error: Debes ingresar números válidos.");
+        continue;
+      }
+
+      let resultado = realizarOperacion(num1, num2, operacion);
+      alert("Resultado: " + resultado);
+    }
+  </script>
+
+  <a href="index.html">Volver a la hoja de vida</a>
+</body>
+</html>
