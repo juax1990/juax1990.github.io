@@ -1,5 +1,5 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #fFFFFF;
     text-align: center;
     padding: 10px;
@@ -110,7 +110,7 @@ img {
 
 h2 {
     text-align: center;
-    padding: auto;
+    padding: 10px;
     background-color: #4A4A4A;
     color: #fFFFFF;
 }
