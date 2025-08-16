@@ -238,7 +238,7 @@ footer {
     width: 30px;
     height: 22px;
     cursor: pointer;
-    z-index: 2000; /* 👈 más alto que el menú */
+    z-index: 1000; /* 👈 más alto que el menú */
     position: relative; /* 👈 necesario para que el z-index funcione */
 }
 
@@ -252,11 +252,11 @@ footer {
     
 }
 
-#btnTop {
+#btnTop { 
     position: fixed;
     bottom: 20px;   /* distancia desde abajo */
     right: 20px;    /* distancia desde la derecha (puedes cambiar a left si quieres otro lateral) */
-    z-index: 99;    /* para que quede encima de todo */
+    z-index: 200;    /* para que quede encima de todo */
     background-color: #7E1AAE; /* tu color principal */
     color: white;
     border: none;
@@ -297,7 +297,7 @@ footer {
         max-height: 0;  /* Oculto por defecto */
         overflow: hidden;
         transition: max-height 0.5s ease; /* Animación de despliegue */
-        z-index: 1000;
+        z-index: 500;
     }
 
     .menu.show {
