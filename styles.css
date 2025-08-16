@@ -39,6 +39,15 @@ nav a {
     background-color: #59e;
 }
 
+.nav_link_incolor {
+    color: #7E1AAE;
+    background-color: #fff;
+}
+
+.nav_link_incolor:hover {
+    background-color: #17CFCB;
+}
+
 h1 {
     font-size: larger;
     background-color: #59e;

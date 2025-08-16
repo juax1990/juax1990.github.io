@@ -1,0 +1,333 @@
+/* Estilos generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+h3 {
+    background-color: #17CFCB;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+/* Navbar */
+
+.incolors {
+    width: 15vh;
+}
+
+.social-buttons {
+    display: flex;
+    gap: 10px;
+    margin-left: auto; /* empuja hacia la derecha */
+    align-items: center;
+}
+
+.social-buttons a svg {
+    transition: transform 0.2s ease-in-out;
+}
+
+.social-buttons a:hover svg {
+    transform: scale(1.2);
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    align-items:center;
+}
+
+/* Botón hamburguesa oculto en PC */
+.menu-toggle {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    color: #7E1AAE;
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.menu li:hover a{
+    color: #17CFCB;
+    text-decoration:underline;
+    text-underline-offset: 10px; /* separa la línea de las letras */
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: 0;
+    background:#fff;
+    list-style: none;
+    padding: 0;
+    min-width: 150px;
+}
+
+.submenu li a {
+    padding: 10px;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: #fff;
+    color: #7E1AAE;
+}
+
+.somos {
+    background-color: #17CFCB;
+    color: #fff;
+    font-size: 1.0rem;   /* un poco más grande */
+    line-height: 1.5;   /* más espacio entre líneas */
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.servicios {
+    padding: 20px;
+    align-items: center;
+    color: #17CFCB;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    text-align: center;
+    
+}
+
+.emprendimiento {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Formulario */
+.form-section {
+    max-width: 500px;
+    margin: 30px auto;
+    background: #7E1AAE;
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffff;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+input, textarea, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+
+button {
+    background: #ff6600;
+    color: white;
+    border: none;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #e55b00;
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.container_final {
+    position: relative; /* NECESARIO para que overlay se ubique relativo a este contenedor */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/001/266/740/large_2x/two-people-working-on-laptops-in-an-office-free-photo.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.container_final .overlay {
+    position: absolute; /* ocupa todo el espacio del .hero */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(25, 25, 25, 0.5); /* gris semitransparente */
+    z-index: 1; /* capa intermedia */
+    border-radius: 10px 10px 0 0;
+}
+
+.subcontainer {
+    position: relative; /* activa el z-index */
+    z-index: 2; /* ahora sí, se muestra por encima de la overlay */
+    color: white;
+    text-align: center;
+    width: 90%; /* ocupa casi todo el ancho */
+    display: flex;
+    color: white;
+    gap: 20px;
+    flex-direction: column; /* logo arriba, texto abajo */
+    align-items: center; /* centrado horizontal */
+    margin: 10px;
+}
+
+span {
+    font-size: 1.2rem;   /* un poco más grande */
+    line-height: 2.0;   /* más espacio entre líneas */
+    margin-top: 10px;
+    margin-bottom: 20px; /* separación extra abajo */
+    max-width: 500px;
+}
+
+.logo_incolor{
+    width: 15vh;
+}
+
+.contacto {
+    text-decoration: underline;
+    text-underline-offset: 10px; /* separa la línea de las letras */
+    font-size: 2.3rem;   /* un poco más grande */
+    line-height: 1;   /* más espacio entre líneas */
+    margin-top: 0;
+    margin-bottom: 20px; /* separación extra abajo */
+    max-width: 500px;
+}
+
+footer {
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    border-radius: 0 0 10px;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+    display: none; /* oculto en PC */
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 22px;
+    cursor: pointer;
+    z-index: 2000; /* 👈 más alto que el menú */
+    position: relative; /* 👈 necesario para que el z-index funcione */
+}
+
+.menu-toggle span {
+    display: block;
+    height: 4px;
+    width: 100%;
+    background: #7E1AAE;
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    
+}
+
+#btnTop {
+    position: fixed;
+    bottom: 20px;   /* distancia desde abajo */
+    right: 20px;    /* distancia desde la derecha (puedes cambiar a left si quieres otro lateral) */
+    z-index: 99;    /* para que quede encima de todo */
+    background-color: #7E1AAE; /* tu color principal */
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0; /* oculto al inicio */
+    pointer-events: none;
+}
+
+#btnTop.show {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+#btnTop:hover {
+    transform: scale(1.1);
+    background-color: #5c0d8c; /* un tono más oscuro */
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu {
+        flex-direction:column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        max-height: 0;  /* Oculto por defecto */
+        overflow: hidden;
+        transition: max-height 0.5s ease; /* Animación de despliegue */
+        z-index: 1000;
+    }
+
+    .menu.show {
+        max-height: 500px; /* se despliega con animación */
+        border-top: 2px solid #7E1AAE;
+    }
+
+    .menu li {
+        text-align: center;
+        border-bottom: 1px solid #eee;
+        width: 100%;
+    }
+
+    .submenu {
+        position: static;
+    }
+    .logo_incolor {
+        width: 40vw;   /* se adapta al ancho de pantalla */
+        max-width: 200px; /* no crece demasiado */
+        height: auto; /* mantiene proporción */
+    }
+
+    /* Ajuste del texto en el footer */
+    .subcontainer span {
+        font-size: 1rem;
+        line-height: 1.5;
+        max-width: 90%;
+    }
+
+    .contacto {
+        font-size: 1.5rem;
+    }
+}
