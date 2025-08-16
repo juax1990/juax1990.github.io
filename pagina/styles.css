@@ -256,7 +256,7 @@ footer {
     position: fixed;
     bottom: 20px;   /* distancia desde abajo */
     right: 20px;    /* distancia desde la derecha (puedes cambiar a left si quieres otro lateral) */
-    z-index: 200;    /* para que quede encima de todo */
+    z-index: 5000;    /* para que quede encima de todo */
     background-color: #7E1AAE; /* tu color principal */
     color: white;
     border: none;
