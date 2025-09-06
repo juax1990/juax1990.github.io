@@ -96,6 +96,13 @@ p {
     border-radius: 10px;
 }
 
+.xperience {
+    display: inline-block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 h4 {
     background-color: #7f7d7d;
     padding: 15px;
@@ -134,6 +141,12 @@ td, th{
 
 td {
     color: #444a;
+}
+
+.nav_link-xperience:hover {
+    color: #59e;
+    text-decoration: underline;
+    text-underline-offset: 5px;
 }
 
 table {
@@ -175,6 +188,31 @@ hr {
     padding: 10px;
     margin: 20px;
     text-align: left;
+}
+
+.link-form {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    background-color: #59e;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.link-form:hover {
+    color: #ffffff;
+}
+
+.calculadora-basica {
+    color: #0000FF;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    padding: 10px;
+
+}
+
+.calculadora-basica:hover {
+    outline: 1px solid #59e;
+    transition: outline 0.2s, outline-offset 0.2s;
 }
 
 aside{
