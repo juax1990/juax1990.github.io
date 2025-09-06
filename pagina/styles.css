@@ -39,6 +39,10 @@ h3 {
     background-color: #fff;
     padding: 10px 20px;
     align-items: center;
+    position: sticky;
+    top: 0;
+    margin-bottom: 10px;
+    box-shadow: 0 0 15px #000;
 }
 
 .menu {
@@ -91,6 +95,8 @@ h3 {
 .menu li:hover .submenu {
     display: block;
 }
+/* End nav bar*/
+
 
 /* Hero */
 .hero {
