@@ -97,8 +97,6 @@ p {
 }
 
 .xperience {
-    display: inline-block;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
