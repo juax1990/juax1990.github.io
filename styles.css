@@ -8,13 +8,15 @@ body {
 nav {
     background-color: #003366;
     padding: 3px;
-    border-radius: 12px;
+    border-radius: 8px;
     font-size: small;
 }
 
 nav h3 {
-    color: #ffff;
+    color: #ffffff;
     padding-left: 15px;
+    text-underline-offset: 10px;
+    text-decoration: underline;
 }
 
 header {
@@ -27,7 +29,7 @@ nav li {
     gap: 10px;
     padding: 10px;
     margin: 20px;
-    background-color: #7f7d7d;
+    background-color: #626161;
     border-radius: 10px;
 }
 
@@ -35,25 +37,35 @@ nav a {
     color: #fFFFFF;
 }
 
-.nav_link:hover {
+.nav_link-item:hover {
+    text-underline-offset: 10px;
+    text-decoration: underline;
     background-color: #59e;
+    border-radius: 6px;
+    padding: 5px;
 }
 
 .nav_link_incolor {
     color: #7E1AAE;
     background-color: #fff;
+    border-radius: 6px;
+    padding: 6px;
 }
 
 .nav_link_incolor:hover {
     background-color: #17CFCB;
+    text-decoration: underline;
+    text-underline-offset: 4px;
 }
 
 h1 {
     font-size: larger;
     background-color: #59e;
-    padding: 12px;
+    padding: 30px;
     border-radius: 12px;
     color: #fFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 p {
@@ -62,16 +74,40 @@ p {
     margin: 30px;
 }
 
-h1 + img {
-    border-radius: 50px;
+.my-photo {
+    border-radius:20px;
     border: 1px solid black;
+    outline: 1px solid #59e;
+    transition: outline 0.2s, outline-offset 0.2s;
+}
+
+.my-photo:hover {
+    outline: 5px solid rgb(120, 181, 255);
+}
+
+.contact {
+    font-size: 20px;
+    padding: 10px;
+}
+
+.contact:hover {
+    outline: 1px solid #59e;
+    transition: outline 0.2s, outline-offset 0.2s;
+    border-radius: 10px;
 }
 
 h4 {
     background-color: #7f7d7d;
-    padding: 4px;
-    border-radius: 5px;
+    padding: 15px;
+    border-radius: 10px;
     color: #fFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+}
+
+dl {
+    text-align: justify;
+    justify-content: center;
 }
 
 h3 + li {
@@ -102,7 +138,7 @@ td {
 
 table {
     width: 100%;
-    min-width: 600px; /* ancho mínimo si necesitas columnas amplias */
+    min-width: 200px; /* ancho mínimo si necesitas columnas amplias */
     border-collapse: separate;
     border: 2px solid #007bff;
     border-radius: 12px;
@@ -119,9 +155,11 @@ img {
 
 h2 {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #4A4A4A;
     color: #fFFFFF;
+    text-decoration: underline;
+    text-underline-offset: 10px;
 }
 
 br {
